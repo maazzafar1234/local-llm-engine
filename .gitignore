@@ -3,4 +3,5 @@ node_modules/
 venv/
 cache.db
 .env
-__pycache__/
+__pycache__/terraform/.terraform/
+terraform/.terraform/
