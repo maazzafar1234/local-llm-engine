@@ -11,7 +11,8 @@ FROM python:3.11-slim AS backend-base
 WORKDIR /app/backend
 RUN apt-get update && apt-get install -y \
     tesseract-ocr \
-    libgl1-mesa-glx \
+    llibgl1 \
+    libglib2.0-0 \
     && rm -rf /var/lib/lists/*
 
 COPY backend/requirements.txt .
