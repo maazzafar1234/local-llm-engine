@@ -1,7 +1,28 @@
+# Secrets, keys, and environment files
+.env
+.env.*
+!.env.example
+*.pem
+
+# Terraform state, lock files, and working directories
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+
+# Python virtual environments, caches, and local databases
+backend/.venv/
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+cache.db
+
+# Node / Next.js
 node_modules/
 .next/
-venv/
-cache.db
-.env
-__pycache__/terraform/.terraform/
-terraform/.terraform/
+out/
